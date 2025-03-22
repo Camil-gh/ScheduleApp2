@@ -77,90 +77,22 @@
     margin: 0 auto;
 }
 
-.carousel-container {
-    perspective: 1200px;
-     margin-top: 50px;
-     display: flex;
-     justify-content: center;
+.schedule-slot {
+    min-height: 20px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
 }
 
-.carousel {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: spin 30s linear infinite;
+.has-background-info-light {
+    background-color: #d0ebff;
 }
 
-.carousel:hover {
-    animation-play-state: paused;
+td {
+    height: 15px; 
 }
 
-.carousel img {
-    position: absolute;
-    width: 400px;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+#week-picker{
+    width: 150px;
 }
-
-@keyframes spin {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-.container .column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h2 {
-    margin-top: 100px;
-}
-
-@media screen and (max-width: 768px) {
-    .carousel {
-        width: 200px; 
-        height: 200px; 
-    }
-
-    .carousel img {
-        position: absolute;
-        width: 200px;
-        height: 150px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
-
-}
-
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .pagination a {
-    margin: 0 5px;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #007bff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .pagination a.active {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .pagination a:hover {
-    background-color: #0056b3;
-    color: #fff;
-  }
-  
