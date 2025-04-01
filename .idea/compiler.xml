@@ -7,12 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Schedule App" />
+        <module name="ScheduleManagmentApp" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ProjektZespolowy" options="-parameters" />
       <module name="Schedule App" options="-parameters" />
+      <module name="ScheduleManagmentApp" options="-parameters" />
     </option>
   </component>
 </project>

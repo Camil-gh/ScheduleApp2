@@ -1,16 +1,12 @@
 :root{
-    --primary:#4D194D;
-    --link:#144552;
-    --info:#212F45;
-    --danger:#006466;
-    --buttonColor:#0B525B;
-    --ColorGrad1: #3E1F47;
-    --ColorGrad2: #065A60;
-    --ColorGrad3: #272640;
+    --ColorGrad1: #1A1A1D;
+    --ColorGrad2: #3B1C32;
+    --ColorGrad3: #6A1E55;
+    --ColorGrad4: #A64D79;
 }
 
 .navbar, .navbar-menu.is-active{
-    background-color: var(--info);
+    background-color: var(--ColorGrad2);
 }
 
 .navbar-item{
@@ -19,148 +15,100 @@
 
 .navbar .navbar-item:hover {
     background-color: var(--link);
-    background: linear-gradient(0.25turn, var(--ColorGrad1), var(--danger));
+    background: linear-gradient(0.25turn, var(--ColorGrad1), var(--ColorGrad2));
     color: whitesmoke;
 }
 
 .hero-body{
-    background-color: var(--danger);
+    background-color: var(--ColorGrad4);
 }
 
-.section{
-    background: linear-gradient(var(--danger), var(--primary));
+body{
+    background: linear-gradient(var(--ColorGrad2), var(--ColorGrad1));
 }
 
 .footer{
-    background-color: var(--primary);
+    background-color: inherit;
 }
 
+.container{
+    margin-top: 20px;
+}
 .container .button{
-    background-color: var(--buttonColor);
+    color: white;
+    background-color: var(--ColorGrad2);
     margin-top: 10px;
 }
 
 .container .button:hover{
-    background: linear-gradient(to left, var(--info), var(--primary));
-}
-
-.section .box{
-    background: linear-gradient(to top,var(--ColorGrad2), var(--ColorGrad1));
-    box-shadow: 10px 5px 5px black;
-}
-
-.section .card{
-    background: linear-gradient(to left, var(--ColorGrad3), var(--link));
-    box-shadow: 10px 5px 5px black;
-}
-
-.section .card:hover {
-    background: linear-gradient(to right, var(--ColorGrad3), var(--link)); 
-    transform: scale(1.05); 
-    box-shadow: 15px 10px 20px var(--buttonColor);
+    color: white;
+    background: linear-gradient(to left, var(--ColorGrad5), var(--ColorGrad2));
 }
 
 .navbar-burger span {
     background-color: black
 }
-
-.footer .icon-list {
+.footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10px; 
-    margin-top: 20px;
+    gap: 20px;
 }
 
-.footer .icon-list a img {
-    display: block;
-    margin: 0 auto;
+.footer img{
+    width: 40px;
+    height: 40px;
 }
 
-.carousel-container {
-    perspective: 1200px;
-     margin-top: 50px;
-     display: flex;
-     justify-content: center;
-}
-
-.carousel {
-    width: 300px;
-    height: 300px;
+.preloader {
     position: relative;
-    transform-style: preserve-3d;
-    animation: spin 30s linear infinite;
-}
-
-.carousel:hover {
-    animation-play-state: paused;
-}
-
-.carousel img {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
     position: absolute;
-    width: 400px;
-    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-@keyframes spin {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-.container .column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h2 {
-    margin-top: 100px;
-}
-
-@media screen and (max-width: 768px) {
-    .carousel {
-        width: 200px; 
-        height: 200px; 
-    }
-
-    .carousel img {
-        position: absolute;
-        width: 200px;
-        height: 150px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
-
-}
-
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
   }
   
-  .pagination a {
-    margin: 0 5px;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #007bff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  .subtitle {
+      color: white;
+    font-size: 48px;
   }
   
-  .pagination a.active {
-    background-color: #007bff;
-    color: #fff;
+  .title {
+      color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom:20px;
   }
-  
-  .pagination a:hover {
-    background-color: #0056b3;
-    color: #fff;
+
+  .MenuCh{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
   }
-  
+
+  li a{
+    color: var(--ColorGrad5);
+    font-weight: bold;
+}
+
+li a:hover{
+      color: var(--ColorGrad1);
+      font-weight: bold;
+  }
