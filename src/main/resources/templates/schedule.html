@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Zajęć</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" th:href="@{/CSS/schedule.css}">
 </head>
 <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            
+            <a class="navbar-item" href="/">
+                Moja Strona
+            </a>
+    
+           
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    
+       
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/schedule">Plan</a>
+
+            </div>
+
+            <div class="navbar-end">
+                <a class="navbar-item" href="/login">
+                    <span>Zaloguj</span>
+                </a>
+            </div>
+        </div>
+    </nav>
 
 <section class="section">
     <div class="container">
-        <h1 class="title has-text-centered">Plan Zajęć</h1>
+        <h1 class="title has-text-centered has-text-white">Plan Zajęć</h1>
         <div class="box has-text-centered">
             <button class="button is-small is-info" id="prev-week">← Poprzedni tydzień</button>
             <input type="date" id="week-picker" class="input is-small mx-2" />
@@ -39,6 +68,58 @@
         </div>
     </div>
 </section>
+<div class="footer"> 
+    <div class="columns"> 
+
+      <div class="column has-text-centered has-text-white"> 
+          <p>Copyright © CatFish</p> 
+      </div>
+
+      <div class="column"> 
+        <h4 class="bd-footer-title  
+                   has-text-weight-medium 
+                   has-text-left
+                   has-text-white"> 
+          Schedule 
+        </h4> 
+        <p class="bd-footer-link  
+                  has-text-left
+                  has-text-white"> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Nullam sed sem ac lorem tincidunt placerat vel quis diam.
+        </p> 
+      </div> 
+    
+      <div class="column"> 
+        <h4 class="bd-footer-title  
+                   has-text-weight-medium  
+                   has-text-justify
+                   has-text-white"> 
+          Address 
+        </h4> 
+        <p class="bd-footer-link has-text-white"> 
+          MAI 33, Antananarivo 105, Madagaskar
+        </p> 
+    
+      </div> 
+    
+      <div class="column"> 
+        <h4 class="bd-footer-title 
+                   has-text-weight-medium 
+                   has-text-justify
+                   has-text-white"> 
+          Contact us 
+        </h4> 
+
+        <p class="bd-footer-link has-text-white"> 
+            <p class="has-text-white">ContactUs@example.com</p>
+            <p class="has-text-white">+261 34 05 024 91 </p>
+          <a href="https://www.sancristobal.mg/">Web Page</a>
+        </p> 
+    
+      </div> 
+    </div> 
+</div> 
 
 
 <script>
