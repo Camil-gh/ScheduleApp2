@@ -5,73 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rejestracja</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" th:href="@{/CSS/styleR.css}">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/register.css}">
 </head>
 <body>
     <div class="register-container">
         <div class="box">
-            <h1 class="title has-text-centered">Rejestracja</h1>
+            <h1 class="title has-text-centered has-text-white">Rejestracja</h1>
             <form id="registerForm">
             <div class="area">
                 <div class="field">
-                    <label class="label">Imie:</label>
+                    <label class="label has-text-white">Imie:</label>
                     <div class="control">
                         <input class="input" type="text" id="regUserName" placeholder="Wprowadź imię" required>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Nazwisko:</label>
+                    <label class="label has-text-white">Nazwisko:</label>
                     <div class="control">
                         <input class="input" type="text" id="regUserLastName" placeholder="Wprowadź nazwisko" required>
                     </div>
                 </div>
             </div>
                 <div class="field">
-                    <label class="label">Login:</label>
+                    <label class="label has-text-white">Login:</label>
                     <div class="control">
                         <input class="input" type="text" id="regLogin" placeholder="Wprowadź login" required>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Hasło:</label>
+                    <label class="label has-text-white">Hasło:</label>
                     <div class="control">
                         <input class="input" type="password" id="regPassword" placeholder="Wprowadź hasło" required>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Email:</label>
+                    <label class="label has-text-white">Email:</label>
                     <div class="control">
                         <input class="input" type="email" id="regMail" placeholder="Wprowadź adres email" required>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Telefon:</label>
+                    <label class="label has-text-white">Telefon:</label>
                     <div class="control">
                         <input class="input" type="text" id="regPhoneNumber" placeholder="Wprowadź numer telefonu" required>
                     </div>
                 </div>
             <div class="area">
                 <div class="field">
-                    <label class="label">Miasto:</label>
+                    <label class="label has-text-white">Miasto:</label>
                     <div class="control">
                         <input class="input" type="text" id="regCity" placeholder="Wprowadź miasto zamieszkania" required>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Ulica:</label>
+                    <label class="label has-text-white">Ulica:</label>
                     <div class="control">
                         <input class="input" type="text" id="regStreet" placeholder="Wprowadź nazwę ulicy" required>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Numer domu/mieszkania:</label>
+                    <label class="label has-text-white">Numer domu/mieszkania:</label>
                     <div class="control">
-                        <input class="input" type="text" id="regLogin" placeholder="Wprowadź numer domu/mieszkania" required>
+                        <input class="input" type="text" id="regHome" placeholder="Wprowadź numer domu/mieszkania" required>
                     </div>
                 </div>
             </div>
 
-                <div class="field">
+                <div class="field is-centered">
                     <button class="button is-success" type="button">Zarejestruj się</button>
 
                 </div>
